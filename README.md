@@ -1,5 +1,6 @@
-#Symfony Rest Blog API + Docker mysql
+# Symfony Rest Blog API + Docker mysql
 
+## Install
 * git clone project
 * `docker-compose up -d`
 * Modify `.env.local` file and replace/add 
