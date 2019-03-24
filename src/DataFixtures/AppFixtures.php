@@ -29,7 +29,6 @@ class AppFixtures extends Fixture
             $author = new Author();
             $author->setFirstName('First name'. $i);
             $author->setLastName('Last name'. $i);
-            $author->
 
             $manager->persist($author);
         }
