@@ -3,10 +3,11 @@
 ## Install
 * git clone project
 * `docker-compose up -d`
-* Modify `.env.local` file and replace/add 
-    * `DATABASE_URL=mysql://root:root@127.0.0.1:3307/symfony-rest-blog-api`
-    * `JWT_PASSPHRASE=toto`
 * `composer install`
+* `php bin/console server:run `
 * `php bin/console doctrine:database:create`
-* `php bin/console doctrine:migrations:migrate`
 * `php bin/console doctrine:fixtures:load`
+* `mkdir -p config/jwt`
+* `openssl genrsa -out config/jwt/private.pem -aes256 4096`
+* `openssl rsa -pubout -in config/jwt/private.pem -out config/jwt/public.pem`
+* connect to /admin with toto@toto.com and toto
